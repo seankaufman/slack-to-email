@@ -3,10 +3,11 @@ Bundler.setup
 
 require 'sinatra'
 
-class App < Sinatra::App
-  get '/'
+class App < Sinatra::Application
+  get '/' do
     "hi"
   end
 end
 
 run App
+
